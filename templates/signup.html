@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+<body>
+    {% include 'base/navbar.html' %}
+
+    <div class="login_element" style="width:43%">
+        <form action="" method="post">
+            {% csrf_token %}
+            <p class="label">Sign Up</p>
+            <input type="text" name="fname" placeholder="First Name">
+            <input type="text" name="lname" placeholder="Last Name"><br>
+            <input type="text" name="username" placeholder="Username">
+            <input type="email" name="email" placeholder="Email"><br>
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="cpassword" placeholder="Confirm Password"><br>
+            <button type="submit" class="btn btn-primary" style="margin-left:42%; margin-top:20px; font-weight:bold">Sign Up</button>
+            <p style="text-align:center; margin-top:20px;">Already a User? <a href="login">Login</a> here</p>
+
+        </form>
+    </div>
+    {% for i in messages %}
+    <p>{{i}}</p>
+    {% endfor %}
+
+    {% include 'base/footer.html' %}
+    
+</body>
+</html>

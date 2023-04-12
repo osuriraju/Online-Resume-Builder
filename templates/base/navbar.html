@@ -1,0 +1,35 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-between">
+          
+          <a href="#" class="brand">RESUME BUILDER</a>
+  
+          <a href="#" class="alabels">RESUME EXAMPLES</a>
+
+          
+          <div class="row" style="margin-top:10px">
+          {% if user.is_authenticated %}
+
+          <p class="col" style="font-family:Times new roman; color:white; font-weight:bold; font-size:20px; text-transform:capitalize;">{{ user.username }}</p>
+
+          <a href="logout" class="alabels col">Logout</a>
+          {% else %}
+          <a href="login" class="alabels col">Login</a>
+          {% endif %}
+        </div>
+        </div>
+      </nav>
+</body>
+</html>

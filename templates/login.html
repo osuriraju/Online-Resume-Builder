@@ -1,0 +1,36 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+<body>
+    {% include 'base/navbar.html' %}
+
+    <div class="login_element">
+        <form action="" method="post">
+            {% csrf_token %}
+            <p class="label">Log In</p>
+            <input type="text" name="username" placeholder="Username"><br>
+            <input type="password" name="password" placeholder="Password"><br>
+            <button type="submit" class="btn btn-primary" style="margin-left:30%; margin-top:20px;font-weight:bold;">Submit</button>
+            <p style="text-align:center; margin-top:20px;">Don't have account? <a href="signup">SignUp</a> now</p>
+        </form>
+    </div>
+
+    {% if messages %}
+    {% for i in messages %}
+    <p>{{i}}</p>
+    {% endfor %}
+    {% endif %}
+
+    {% include 'base/footer.html' %}
+    
+</body>
+</html>

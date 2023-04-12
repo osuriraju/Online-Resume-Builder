@@ -1,0 +1,171 @@
+body {
+  background-color: rgb(0, 255, 255);
+}
+
+.bg-light{
+  background-color: rgb(0, 218, 218) !important ;
+  box-shadow: 1px 1px 10px black;
+}
+
+.alabels {
+  text-decoration: none;
+  color: rgb(110, 60, 0);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.brand {
+  font-size: 32px;
+  color: rgb(110, 60, 0);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: none;
+}
+
+.form_space {
+  background-color: rgb(226, 226, 226);
+  margin: 2% 10% 5% 10%;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 95);
+  border-radius: 40px 0px 40px 0px;
+  padding-bottom: 10%;
+}
+
+.form_head {
+  background-color: white;
+  font-size: 20px;
+  border-bottom: 2px solid rgb(0, 0, 95);
+  border-radius: 40px 0 0 0;
+  padding: 2px;
+  margin: auto;
+}
+
+input {
+  border: 0;
+  width: 250px;
+  height: 40px;
+  padding-bottom: 0%;
+  background-color: transparent;
+  font-size: 16px;
+  margin: 2% 4%;
+  border-bottom: 0.5px solid gray;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(0, 0, 95);
+  
+ 
+}
+
+
+.showCase{
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 0%;
+}
+
+footer{
+  margin: 4%;
+  text-align: center;
+}
+
+.login_element{
+  background-color: rgb(0, 255, 255);
+  width: 20%;
+  height: aut0;
+  margin: auto;
+  margin-top: 10%;
+  padding: 20px;
+  border: 2px solid rgb(0, 113, 113);
+  box-shadow: 2px 2px 20px rgb(70, 70, 70);
+  border-radius: 20px;
+}
+
+.label{
+  text-align: center;
+  background-color: rgb(0, 0, 95);
+  color:white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.resPage{
+  margin: auto;
+  background-color: beige;
+  border: 1px solid gray;
+  width: 80%;
+  margin-top: 20px;
+  box-shadow: 2px 2px 10px rgb(227, 230, 144);
+  padding-bottom: 5%;
+}
+
+.resHead{
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 3px 5px gray;
+}
+
+.resProf p{
+  text-align: center;
+  margin-top: 5%;
+}
+
+.resEd p{
+  text-align: center;
+  margin-top: 5%;
+}
+
+.resExp p{
+  text-align: center;
+  margin-top: 5%;
+}
+.resProj p{
+  text-align: center;
+  margin-top: 5%;
+}
+.resSkills p{
+  text-align: center;
+  margin-top: 5%;
+}
+.resInt p{
+  text-align: center;
+  margin-top: 5%;
+}
+.inplong{
+  width: 1000px;
+}
+
+.btns{
+  text-align: center;
+  margin: 20px;
+
+}
+
+.resElement{
+  text-align: center;
+  background-color: rgb(199, 179, 143);
+  margin-top: 30px;
+  width: 150px;
+  padding-bottom: 20px;
+  border-radius: 25px;
+  
+}
+.resElement p{
+  color: white;
+  background-color: rgb(0, 113, 113);
+  padding:15px;
+  font-size: 13px;
+  border-radius: 25px 25px 0px 0px;
+
+}
+
+.resLink{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.resLink:hover{
+  color: rgb(29, 3, 85);
+}

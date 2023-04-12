@@ -1,0 +1,78 @@
+{% load static %}
+{% include 'base/navbar.html' %}
+
+
+<form action="" method="post">
+{% csrf_token %}
+<div class="resPage">
+    
+    <div>
+        <h2 class="resHead">RESUME</h2>
+    </div>
+
+    <div>
+        <div class="resProf">
+            <p><<<<<<<<<   Personal Information    >>>>>>>>>></p>
+            <input type="text" name="firstName" placeholder="First Name">
+            <input type="text" name="lastName" placeholder="Last Name">
+            <input type="text" name="gender" placeholder="Gender">
+            <input type="text" name="phone" placeholder="Phone">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="address" placeholder="Address">
+            <input type="text" name="role" placeholder="Enter your Role">
+            <input type="text" name="desc" placeholder="Describe your Role" class="inplong">
+        </div>
+
+        <div class="resEd">
+            <p><<<<<<<<<   Educational Information    >>>>>>>>>></p>
+            <input type="text" name="degree1" placeholder="UG/PG">
+            <input type="text" name="college1" placeholder="College Name">
+            <input type="text" name="gpa1" placeholder="GPA/Percentage">
+        </div>
+
+        <div class="resEd">
+            <input type="text" name="degree2" placeholder="Diploma/Inter">
+            <input type="text" name="college2" placeholder="College Name">
+            <input type="text" name="gpa2" placeholder="GPA/Percentage">
+        </div>
+
+        <div class="resExp">
+            <p><<<<<<<<<   Experience    >>>>>>>>>></p>
+            <input type="text" name="CompName1" placeholder="Company Name">
+            <input type="text" name="CompPeriod1" placeholder="Employement Period">
+            <input type="text" name="CompRole1" placeholder="Role in the Company">
+        </div>
+        <div class="resExp">
+            <input type="text" name="CompName2" placeholder="Company Name">
+            <input type="text" name="CompPeriod2" placeholder="Employement Period">
+            <input type="text" name="CompRole2" placeholder="Role in the Company">
+        </div>
+
+        <div class="resProj">
+            <p><<<<<<<<<   Projects    >>>>>>>>>></p>
+            <input type="text" name="Proj1" placeholder="Project-1 Name">
+            <input type="text" name="ProjDesc1" placeholder="Project Description" class="inplong">
+        </div>
+        <div class="resProj">
+            <input type="text" name="Proj2" placeholder="Project-2 Name">
+            <input type="text" name="ProjDesc2" placeholder="Project Description" class="inplong">
+        </div>
+
+        <div class="resSkills">
+            <p><<<<<<<<<   Skills    >>>>>>>>>></p>
+            <input type="text" name="skills" placeholder="Enter Skills(Comma Seperated)" class="inplong">
+        </div>
+
+        <div class="resInt">
+            <p><<<<<<<<<   Interests    >>>>>>>>>></p>
+            <input type="text" name="interest" placeholder="Interests(Comma Seperated)" class="inplong">
+        </div>
+
+    </div>
+</div>
+
+<div class="btns">
+<button type="submit" class="btn btn-success">Create Resume</button>
+<a href="/dashboard" class="btn btn-danger">Back</a>
+</div>
+</form>

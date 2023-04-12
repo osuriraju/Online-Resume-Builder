@@ -1,0 +1,35 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    
+    {% include 'base/navbar.html' %}
+
+    <div class="container-fluid" style="padding-top:5%">
+        <div class="row">
+
+            <div class="col-6">
+                <img src="{% static 'images/resume.png' %}" alt="Resume Example" class="showCase">
+            </div>
+
+            <div class="col-6">
+                <h1 style="margin-top: 20%;">Wanna build your resume..?</h1>
+                <p style="margin-top: 10%;color:rgb(42, 0, 91);font-weight:bold;">WHY LATE.. </p>
+                <p><a href="login" style="color:rgb(255, 255, 255); font-weight:bold; background-color:rgb(140, 140, 237); padding:10px; border-radius:20px ">Sign up/Login</a> and get your resume with in minutes.</p>
+            </div>
+        </div>
+    </div>
+
+    {% include 'base/footer.html' %}
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+<body>
+    {% include 'base/navbar.html' %}
+<div style="margin-left:43%; margin-top:10%;">
+    <a href="createresume/{{user.id}}"><button class="btn btn-primary">Create Resume</button></a>
+    <div class="resElement">
+        <p>VIEW RESUME</p>
+        {% for i in prof %}
+        <a href="viewresume/{{ i.id }}" class="resLink">{{ i.fname }}</a><br>
+        {% endfor %}
+        
+    </div>
+
+
+</div>
+    
+
+    {% include 'base/footer.html' %}
+</body>
+</html>

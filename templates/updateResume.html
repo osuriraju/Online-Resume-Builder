@@ -1,0 +1,78 @@
+{% load static %}
+{% include 'base/navbar.html' %}
+
+
+<form action="" method="post">
+{% csrf_token %}
+<div class="resPage">
+    
+    <div>
+        <h2 class="resHead">RESUME</h2>
+    </div>
+
+    <div>
+        <div class="resProf">
+            <p><<<<<<<<<   Personal Information    >>>>>>>>>></p>
+            <input type="text" name="firstName" placeholder="First Name" value="{{ prof.fname }}">
+            <input type="text" name="lastName" placeholder="Last Name" value="{{ prof.lname }}">
+            <input type="text" name="gender" placeholder="Gender" value="{{ prof.gender }}">
+            <input type="text" name="phone" placeholder="Phone" value="{{ prof.phone }}">
+            <input type="email" name="email" placeholder="Email" value="{{ prof.email }}">
+            <input type="text" name="address" placeholder="Address" value="{{ prof.address }}">
+            <input type="text" name="role" placeholder="Enter your Role" value="{{ prof.role }}">
+            <input type="text" name="desc" placeholder="Describe your Role" class="inplong" value="{{ prof.desc }}">
+        </div>
+
+        <div class="resEd">
+            <p><<<<<<<<<   Educational Information    >>>>>>>>>></p>
+            <input type="text" name="degree1" placeholder="UG/PG" value="{{ ed.degree1 }}">
+            <input type="text" name="college1" placeholder="College Name" value="{{ ed.college1 }}">
+            <input type="text" name="gpa1" placeholder="GPA/Percentage" value="{{ ed.gpa1 }}">
+        </div>
+
+        <div class="resEd">
+            <input type="text" name="degree2" placeholder="Diploma/Inter" value="{{ ed.degree2 }}">
+            <input type="text" name="college2" placeholder="College Name" value="{{ ed.college2 }}">
+            <input type="text" name="gpa2" placeholder="GPA/Percentage" value="{{ ed.gpa2 }}">
+        </div>
+
+        <div class="resExp">
+            <p><<<<<<<<<   Experience    >>>>>>>>>></p>
+            <input type="text" name="CompName1" placeholder="Company Name" value="{{ exp.compName1 }}">
+            <input type="text" name="CompPeriod1" placeholder="Employement Period" value="{{ exp.compPeriod1 }}">
+            <input type="text" name="CompRole1" placeholder="Role in the Company" value="{{ exp.compRole1 }}">
+        </div>
+        <div class="resExp">
+            <input type="text" name="CompName2" placeholder="Company Name" value="{{ exp.compName2 }}">
+            <input type="text" name="CompPeriod2" placeholder="Employement Period" value="{{ exp.compPeriod2 }}">
+            <input type="text" name="CompRole2" placeholder="Role in the Company" value="{{ exp.compRole2 }}">
+        </div>
+
+        <div class="resProj">
+            <p><<<<<<<<<   Projects    >>>>>>>>>></p>
+            <input type="text" name="Proj1" placeholder="Project-1 Name" value="{{ proj.proj1}}">
+            <input type="text" name="ProjDesc1" placeholder="Project Description" class="inplong" value="{{ proj.projDesc1}}">
+        </div>
+        <div class="resProj">
+            <input type="text" name="Proj2" placeholder="Project-2 Name" value="{{ proj.proj2}}">
+            <input type="text" name="ProjDesc2" placeholder="Project Description" class="inplong" value="{{ proj.projDesc2}}">
+        </div>
+
+        <div class="resSkills">
+            <p><<<<<<<<<   Skills    >>>>>>>>>></p>
+            <input type="text" name="skills" placeholder="Enter Skills(Comma Seperated)" class="inplong" value="{{ skls.skills }}">
+        </div>
+
+        <div class="resInt">
+            <p><<<<<<<<<   Interests    >>>>>>>>>></p>
+            <input type="text" name="interest" placeholder="Interests(Comma Seperated)" class="inplong" value="{{ ints.interests }}">
+        </div>
+
+    </div>
+</div>
+
+<div class="btns">
+<button type="submit" class="btn btn-success">Update</button>
+<a href="/dashboard" class="btn btn-danger">Back</a>
+</div>
+</form>
